@@ -12,7 +12,11 @@ import * as Utils from 'utils/utils.jsx';
 
 import WebrtcController from '../webrtc_controller.jsx';
 
-export default class SidebarRight extends React.Component {
+export default class WebrtcSidebar extends React.Component {
+    static getComponentName() {
+        return 'WebrtcSidebar';
+    }
+
     constructor(props) {
         super(props);
 

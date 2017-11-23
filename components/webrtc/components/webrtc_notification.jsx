@@ -21,6 +21,10 @@ import ring from 'images/ring.mp3';
 const PreReleaseFeatures = Constants.PRE_RELEASE_FEATURES;
 
 export default class WebrtcNotification extends React.Component {
+    static getComponentName() {
+        return 'WebrtcNotification';
+    }
+
     constructor() {
         super();
 

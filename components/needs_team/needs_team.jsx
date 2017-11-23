@@ -200,11 +200,15 @@ export default class NeedsTeam extends React.Component {
         return (
             <div className='channel-view'>
                 <AnnouncementBar/>
-                <WebrtcNotification/>
+                <Pluggable>
+                    <WebrtcNotification/>
+                </Pluggable>
                 <div className='container-fluid'>
                     <SidebarRight/>
                     <SidebarRightMenu teamType={this.state.team.type}/>
-                    <WebrtcSidebar/>
+                    <Pluggable>
+                        <WebrtcSidebar/>
+                    </Pluggable>
                     {content}
 
                     <Pluggable pluggableName='Root'/>
